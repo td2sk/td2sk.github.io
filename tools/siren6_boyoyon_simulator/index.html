@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>シレン6 ボヨヨン壁シミュレーター</title>
+  <script type="module" crossorigin src="assets/index-0dNPlCM4.js"></script>
+  <link rel="stylesheet" crossorigin href="assets/index-8S06drDe.css">
+</head>
+
+<body>
+  <div>
+    シレン6 ボヨヨン壁シミュレーター <br><br>
+    使い方 <br>
+    <ul>
+      <li>セルに壁の文字 (🟦 や ⬛)を埋める
+      </li>
+      <li>その他の文字は何もない床扱い</li>
+    </ul>
+  </div><br>
+  入力方法
+  <ul>
+    <li>スマホ<ul>
+        <li>セルをダブルタップして選択</li>
+      </ul>
+    </li>
+    <li>PC
+      <ul>
+        <li>セルをダブルクリックして選択</li>
+        <li>Excel風に範囲背選択してCtrl-C, Ctrl-V でコピペ</li>
+        <li>Excel風にセル右下の■をドラッグ</li>
+      </ul>
+    </li>
+  </ul>
+  <br>
+
+  <button id="addRowButton">行追加</button><button id="rmRowButton">行削除</button><br>
+  <button id="addColButton">列追加</button><button id="rmColButton">列削除</button><br><br>
+
+  <div id="room"></div>
+  <div>
+    ボヨヨン壁: 🟦 <button onclick="navigator.clipboard.writeText('🟦')">copy</button><br>
+    普通の壁: ⬛ <button onclick="navigator.clipboard.writeText('⬛')">copy</button><br><br>
+  </div>
+  <div>
+    <button id="solveButton">解析</button>
+  </div>
+  <br>
+  <div id="result" />
+</body>
+
+</html>
